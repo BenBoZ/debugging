@@ -12,6 +12,11 @@ This whitepaper aims to give you some practical approaches in solving problems.
 
 A majority of good debuggers are also good programmers, but not vice-versa.
 
+## What is debugging?
+There is trouble shooting and problem solving, problems cause trouble. 
+You can reduce the trouble, but to prevent trouble, solve the problem.
+Debugging is thus problem solving.
+
 # 5 step debugging process
 
 * Reproduce
