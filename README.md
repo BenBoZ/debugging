@@ -1,0 +1,3 @@
+# debugging
+
+Whitepaper about debugging
