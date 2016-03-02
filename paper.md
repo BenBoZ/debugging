@@ -1,3 +1,8 @@
+---  
+title: Debugging
+author: Ben Spoor
+date: March 2, 2016  
+---  
 
 # You're probably non-structured debugger 
 If you are a novice, there is a good chance you are using non-structered methods to debug programs. [SOURCE]
