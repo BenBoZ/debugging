@@ -2,6 +2,7 @@
 title: Debugging
 author: Ben Spoor
 date: March 2, 2016  
+bibliography: src/reference.bib
 ---  
 
 # You're probably non-structured debugger 
@@ -12,6 +13,7 @@ People often mistake debugging for long sessions going on for days trying to hun
 But debugging can also be as quick as 1 minute, when trying to find the source of a compilation error.
 
 
+[@lindad.henman]
 There has been much research on the subject of debugging, problem solving and debugging.
 This whitepaper aims to give you some practical approaches in solving problems.
 
