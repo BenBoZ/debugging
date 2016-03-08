@@ -9,10 +9,11 @@ OUTPUT=paper.pdf
 all: init clean doc
 
 doc: $(PAPER) 
-	pandoc -S -o $(OUTPUT) --filter pandoc-citeproc $(PAPER)
+	pandoc -S -o bld/$(OUTPUT) --filter pandoc-citeproc $(PAPER)
 
 init:
 	@command -v pandoc > /dev/null 2>&1 || (echo 'pandoc not found http://johnmacfarlane.net/pandoc/installing.html' && exit 1)
+	@command -v pandoc-citeproc > /dev/null 2>&1 || (echo 'pandoc-citeproc not found http://johnmacfarlane.net/pandoc/installing.html' && exit 1)
 
 clean:
 	rm -rf $(BUILD_FOLDER)/*
