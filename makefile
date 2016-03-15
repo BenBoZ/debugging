@@ -9,7 +9,10 @@ SVGS=$(wildcard src/img/*.svg)
 IMAGES=$(SVGS:.svg=.pdf)
 
 all: pdf
-full: init clean pdf
+full: init clean directories pdf
+
+directories:
+	@mkdir -p $(BUILD_FOLDER)
 
 pdf: $(IMAGES) $(PAPER) 
 	@echo "Generating doc $(OUTPUT)"
