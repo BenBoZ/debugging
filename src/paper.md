@@ -7,7 +7,7 @@ reference-section-title: References
 bibliography: src/reference.bib
 ---  
 
-![Altran](src/img/altran_logo.svg "Altan logo")
+![Altran](bld/altran_logo.pdf "Altan logo")
 
 
 # Introduction 
