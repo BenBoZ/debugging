@@ -1,5 +1,5 @@
 ---  
-title: Debugging
+title: "Debugging: what you should know as developer"
 author: Ben Spoor
 date: March 2, 2016  
 lang: en-US
@@ -11,8 +11,10 @@ bibliography: src/reference.bib
 
 
 # Introduction 
-This opening section covers the high-level issues and trends in the industry that you are involved with.
-It may also include recommendations or conclusions you have made about the topic.
+According to Google Scholar [@google2016], there are more then 10,000 articles that mention 'Debugging' in their title.
+With such an amount of research on this topic, it is a pity it is still not adequatly addressed in programming texts [@mccauley2008debugging].
+Research by Cambridge university shows developers spend around 50% of their time finding and fixing bugs [@britton2013reversible].
+This paper presents the debugging basis to become more effective at it.
 
 ## You're probably non-structured debugger 
 If you are a novice, there is a good chance you are using non-structered methods to debug programs. [SOURCE]
@@ -21,10 +23,6 @@ You might not even be a novice. [SOURCE]
 Having a structured approach can greatly improve your ability to debug programs, troubleshoot problems or solve problems in general. [SOURCE]
 People often mistake debugging for long sessions going on for days trying to hunt the bug from hell.
 But debugging can also be as quick as 1 minute, when trying to find the source of a compilation error.
-
-[@lindad.henman]
-There has been much research on the subject of debugging, problem solving and debugging.
-This whitepaper aims to give you some practical approaches in solving problems.
 
 A majority of good debuggers are also good programmers, but not vice-versa. [SOURCE]
 
