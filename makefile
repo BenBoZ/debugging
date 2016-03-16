@@ -3,7 +3,7 @@
 BUILD_FOLDER=$(CURDIR)/bld
 
 PAPER=src/paper.md
-OUTPUT=paper
+OUTPUT=Debugging_What_you_should_know
 
 SVGS=$(wildcard src/img/*.svg)
 IMAGES=$(SVGS:.svg=.pdf)
