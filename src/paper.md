@@ -1,10 +1,13 @@
 ---  
-title: "Debugging: what you should know as developer"
+title: "Debugging"
+subtitle: "What you should know as developer"
 author: Ben Spoor
 date: March 2, 2016  
 lang: en-US
 reference-section-title: References
 bibliography: src/reference.bib
+keywords: debugging
+documentclass: article
 ---  
 
 ![Altran](bld/altran_logo.pdf "Altan logo")
