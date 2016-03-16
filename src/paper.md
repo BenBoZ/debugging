@@ -83,9 +83,11 @@ The lesson here is to never make an assumption and double check every fact.
 #### Proof yourself wrong
 One of the most powerfull techniques to cover a lot of ground is to always try to proof yourself wrong.
 When you have an hypothesis of a problem, test or check if you can proof your hypothesis wrong.
-It only takes 1 proof to kill an hypothesis, but an infinite amount to proof it right.
+It only takes 1 proof to kill an hypothesis, but an infinite amount to proof it right. 
+This is the basis of the scientific method [@popper1959]
 For example, all bugs always happen after a certain function is called. 
 Try to reproduce the problem without calling that function.
+
 
 
 
