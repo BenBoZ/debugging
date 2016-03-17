@@ -31,4 +31,19 @@ clean:
 	@echo "Cleaning build folder: $(BUILD_FOLDER)"
 	@rm -rf $(BUILD_FOLDER)/*
 
+
+OS = $(shell uname -s)
+ifeq ($(strip $(OS)),Linux)
+	PDF_VIEW = xdg-open
+else 
+	ifeq "CYGWIN" "$(findstring CYGWIN,$(OS))"
+		PDF_VIEW = cygstart
+	else
+		PDF_VIEW = open
+	endif
+endif
+
+view: pdf
+	$(shell $(PDF_VIEW) bld/$(OUTPUT).pdf &)
+
 .PHONY: init clean
