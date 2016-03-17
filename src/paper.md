@@ -7,7 +7,7 @@ lang: en-US
 reference-section-title: References
 bibliography: src/reference.bib
 keywords: debugging
-documentclass: article
+geometry: margin=2cm
 ---  
 
 ![Altran](bld/altran_logo.pdf "Altan logo")
@@ -37,12 +37,23 @@ Debugging is thus problem solving.
 
 
 
-# High Level Solution 
-This describes the relevant technologies at a high-level, especially those you have designed and intend to promote.
-Support your arguments with tables, charts, and graphics.
-All of these add weight to your argument and provide a contrast to the main text.
+# What should you know ?
+As a developer you should have a structured approach, a good mindset and knowledge about the problem.
+<describe high level solution>
 
-## 5 step debugging process
+## A structures approach
+
+
+## A good mindset
+
+
+# Solution Details 
+This explains how the service, technology, or business model works.
+This is the heart of the white paper.
+It provides very detailed descriptions of the proposed solution.
+You can also use tables, charts, and graphics for this section, with cross-references to external supporting documents if required.
+
+### 5 step debugging process
 
 * Reproduce
 * Collect clues
@@ -50,25 +61,26 @@ All of these add weight to your argument and provide a contrast to the main text
 * Solve the problem
 * Test the solution
 
-### Reproduce the problem
+#### Reproduce the problem
 One of the biggest challenges is getting the complete state clear of the program you are trying to debug.
 If you can reproduce a problem consisttenly, you know when you fixed it as well.
 
-### Collect clues
+#### Collect clues
 Collecting clues gives you a first description of the problem. 
 
-### Isolate the problem
+#### Isolate the problem
 
-#### Start with the first problem
+##### Start with the first problem
 Usually bugs and problems don't come alone. They like to be together, but as always, there is usually one triggering all the problems.
 Your program or deivce starts in a statewith known and good behavior, something happens and it ends in a unwanted state.
 
 Happy place --> Transformation (including bug) --> (Unwanted) end state
 
-#### Define the problem
+
+### Define the problem
 One of the most challenging parts of solving is problem, is solving the right problem.
 
-#### Don't make assumptions
+### Don't make assumptions
 A common mistake made is misrepresenting a problem [Psychology of problem solving].
 For instance, I have two buckets; one half filled with ice tea and the other half filled with lemonade. 
 Both the lemonade and the ice tea have equal densities. If I pour the lemonade in the bucket with ice tea.
@@ -80,7 +92,7 @@ Just pick up the block of frozen ice tea and place
 it back in the other bucket. 
 The lesson here is to never make an assumption and double check every fact. 
 
-#### Proof yourself wrong
+### Proof yourself wrong
 One of the most powerfull techniques to cover a lot of ground is to always try to proof yourself wrong.
 When you have an hypothesis of a problem, test or check if you can proof your hypothesis wrong.
 It only takes 1 proof to kill an hypothesis, but an infinite amount to proof it right. 
@@ -88,14 +100,6 @@ This is the basis of the scientific method [@popper1959]
 For example, all bugs always happen after a certain function is called. 
 Try to reproduce the problem without calling that function.
 
-
-
-
-# Solution Details 
-This explains how the service, technology, or business model works.
-This is the heart of the white paper.
-It provides very detailed descriptions of the proposed solution.
-You can also use tables, charts, and graphics for this section, with cross-references to external supporting documents if required.
 
 ### Strategies
 Strategies here, are techniques to isolate the problem to its smallest reproducible form.
@@ -175,8 +179,12 @@ This discusses the return on investments, usability, and adherence to standards.
 It demonstrates that you are an authority in your field and can back it up with these endorsements.
 Don't take references for granted - not all your competitors will be able to supply such endorsements.
 
+## Cost of debugging
 
+## Effects of debugging knowledge
 
 # Summary 
 Close the paper with a concise summary of your main points.
 As many readers will skip the entire document and read this section only, summarize the main selling points about your solution here.
+
+
