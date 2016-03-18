@@ -10,7 +10,7 @@ keywords: debugging
 geometry: margin=2cm
 ---  
 
-![Altran](bld/altran_logo.pdf "Altan logo")
+![Altran](bld/altran_logo.pdf "Altan logo"){ width=30% }
 
 
 # Introduction 
@@ -36,7 +36,7 @@ Debugging is thus problem solving.
 
 
 
-![Dependecy chain](bld/dependency_chain.pdf "Chain of dependency")
+![Dependecy chain](bld/dependency_chain.pdf "Chain of dependency"){ width=30% }
 
 # What should you know ?
 As a developer you should have a structured approach, a good mindset and knowledge about the problem.
