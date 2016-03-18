@@ -36,6 +36,7 @@ Debugging is thus problem solving.
 
 
 
+![Dependecy chain](bld/dependency_chain.pdf "Chain of dependency")
 
 # What should you know ?
 As a developer you should have a structured approach, a good mindset and knowledge about the problem.
@@ -100,6 +101,9 @@ This is the basis of the scientific method [@popper1959]
 For example, all bugs always happen after a certain function is called. 
 Try to reproduce the problem without calling that function.
 
+### Don't throw out refute hypothesis
+When a hypothesis proves to be wrong, also keep track of this.
+The effort is not lost, a set of refuted hypothesis can lead to a correct one. [@araki1991]. 
 
 ### Strategies
 Strategies here, are techniques to isolate the problem to its smallest reproducible form.
