@@ -18,6 +18,10 @@ pdf: $(IMAGES) $(PAPER)
 	@echo "Generating doc $(OUTPUT)"
 	@pandoc -S -o bld/$(OUTPUT).pdf --filter pandoc-citeproc $(PAPER)
 
+docx: $(IMAGES) $(PAPER) 
+	@echo "Generating doc $(OUTPUT)"
+	@pandoc -S -o bld/$(OUTPUT).docx --filter pandoc-citeproc $(PAPER)
+
 %.pdf: %.svg
 	@echo "Converting $< to $(subst src/img/,,$@)"
 	@convert -density 343 $< bld/$(subst src/img/,,$@)
