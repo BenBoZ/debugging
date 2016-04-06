@@ -7,6 +7,8 @@ addons:
       - imagemagick
       - pandoc
       - pandoc-citeproc
+      - pdflatex
 
 script:
   - make full
+
