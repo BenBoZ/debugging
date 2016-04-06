@@ -1,3 +1,5 @@
+sudo: false
+
 addons:
   apt:
     packages:
@@ -5,5 +7,5 @@ addons:
       - pandoc
       - pandoc-citeproc
 
-script: 
+script:
   - make full
