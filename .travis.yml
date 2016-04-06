@@ -5,7 +5,7 @@ addons:
     packages:
       - imagemagick
       - pandoc
-      #- pandoc-citeproc
+      - pandoc-citeproc
 
 script:
   - make full
