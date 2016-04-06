@@ -1,5 +1,9 @@
-language: haskell
-install:
-  - cabal install pandoc
+addons:
+  apt:
+    packages:
+      - imagemagick
+      - pandoc
+      - pandoc-citeproc
+
 script: 
   - make full
