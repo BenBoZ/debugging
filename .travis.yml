@@ -7,7 +7,7 @@ addons:
       - imagemagick
       - pandoc
       - pandoc-citeproc
-      - texlive
+      - texlive-full
       - lmodern
 
 script:
