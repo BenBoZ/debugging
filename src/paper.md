@@ -2,7 +2,7 @@
 title: "Debugging"
 subtitle: "What you should know as developer"
 author: Ben Spoor
-date: March 2, 2016  
+date: March 2, 2016
 lang: en-US
 reference-section-title: References
 bibliography: src/reference.bib
@@ -13,13 +13,13 @@ geometry: margin=2cm
 ![Altran](bld/altran_logo.pdf "Altan logo"){ width=30% }
 
 
-# Introduction 
-According to Google Scholar [@google2016], there are more then 10,000 articles that mention 'Debugging' in their title.
+# Introduction
+According to Google Scholar [@google2016], there are more than 10,000 articles that mention 'Debugging' in their title.
 With such an amount of research on this topic, it is a pity it is still not adequatly addressed in programming texts [@mccauley2008debugging].
 Research by Cambridge university shows developers spend around 50% of their time finding and fixing bugs [@britton2013reversible].
 This paper presents the debugging basis to become more effective at it.
 
-## You're probably non-structured debugger 
+## You're probably non-structured debugger
 If you are a novice, there is a good chance you are using non-structered methods to debug programs. [SOURCE]
 Education currently lacks proper instruction of debugging. [SOURCE]
 You might not even be a novice. [SOURCE]
