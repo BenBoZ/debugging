@@ -3,7 +3,7 @@ title: "Debugging"
 subtitle: "What you should know as developer"
 author: Ben Spoor
 date: March 2, 2016  
-lang: en-US
+lang: english
 reference-section-title: References
 bibliography: src/reference.bib
 keywords: debugging
