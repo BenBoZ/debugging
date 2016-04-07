@@ -10,10 +10,6 @@ addons:
       - imagemagick
       - texlive-full
 
-before_install:
-  - tlmgr install babel
-  - tlmgr update --self --all
-
 install:
   - cabal install cabal-install
   - cabal install pandoc --reorder-goals
@@ -22,4 +18,3 @@ install:
 script:
   - pandoc --version
   - make full
-
