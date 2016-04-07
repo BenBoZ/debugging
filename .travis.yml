@@ -9,7 +9,7 @@ addons:
 
 install:
   - cabal install cabal-install
-  - cabal install pandoc
+  - cabal install pandoc --reorder-goals
   - cabal install pandoc-citeproc --reorder-goals
 
 script:
