@@ -1,15 +1,21 @@
-sudo: required
-dist: trusty
+sudo: false
+language: haskell
+
+cache:
+- apt
 
 addons:
   apt:
     packages:
       - imagemagick
-      - pandoc
-      - pandoc-citeproc
       - texlive-full
-      - lmodern
+
+install:
+  - cabal install cabal-install
+  - cabal update
+  - cabal install pandoc --reorder-goals
+  - cabal install pandoc-citeproc --reorder-goals
 
 script:
+  - pandoc --version
   - make full
-
