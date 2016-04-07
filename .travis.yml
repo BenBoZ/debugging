@@ -13,8 +13,8 @@ addons:
 install:
   - cabal install cabal-install
   - cabal update
-  - cabal install pandoc
-  - cabal install pandoc-citeproc 
+  - cabal install pandoc --reorder-goals
+  - cabal install pandoc-citeproc --reorder-goals
 
 script:
   - pandoc --version
