@@ -7,6 +7,9 @@ addons:
       - imagemagick
       - texlive-full
 
+before_install:
+  - tlmgr update --self --all
+
 install:
   - cabal install cabal-install
   - cabal install pandoc --reorder-goals
