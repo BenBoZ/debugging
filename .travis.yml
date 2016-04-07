@@ -8,6 +8,7 @@ addons:
       - texlive-full
 
 install:
+  - cabal install caball-install
   - cabal install pandoc
   - cabal install pandoc-citeproc
 
