@@ -1,6 +1,9 @@
 sudo: false
 language: haskell
 
+cache:
+- apt
+
 addons:
   apt:
     packages:
