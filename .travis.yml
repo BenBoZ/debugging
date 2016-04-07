@@ -11,6 +11,7 @@ addons:
       - texlive-full
 
 before_install:
+  - tlmgr install babel
   - tlmgr update --self --all
 
 install:
