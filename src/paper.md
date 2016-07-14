@@ -30,22 +30,70 @@ But debugging can also be as quick as 1 minute, when trying to find the source o
 A majority of good debuggers are also good programmers, but not vice-versa. [SOURCE]
 
 ## What is debugging?
-There is trouble shooting and problem solving, problems cause trouble. 
-You can reduce the trouble, but to prevent trouble, solve the problem.
-Debugging is thus problem solving.
+To understand debugging it is first essential to get some facts straight.
+
+### What is a dependency chain?
+Each piece of software (so independent of language) is just a large set of values that is changed by each statement.
+This can be represented by a 2D matrix in which each row represents the programs state.
+And the vertical axis represents time, so in time the program state is altered.
+These alterations are done by statements, for instance if we have the following program:
+
+    a = 2
+    b = 4
+    c = a + b
+    print c
+
+The entire execution of this program can be represented in the following manner,
+in which the first column represents the points in time.
 
 
+    | T | a | b | c |
+    +---+---+---+---+
+    | 0 | 2 | - | - |
+    | 1 | 2 | 4 | - |
+    | 2 | 2 | 4 | 6 |
+    | 3 | 2 | 4 | 6 |
+
+This table can be extended with arrows showing the dependecies between values.
+Value c in this example is dependent on the values of a and b. 
+Thus you can draw an arrow from a @ T=1 to c @ T=2 and also from b @ T=1.
+If you do this for all values, you build what is called a dependency chain. 
 
 ![Dependecy chain](bld/dependency_chain.pdf "Chain of dependency"){ width=30% }
 
+### Why should I call a bug a defect?
+The famous story about the first bug in history about the moth caused this to be the term used.
+But multiple people in history [source dijkstra] advocate for different namings.
+Partly because it implies something magic happened and some strange behavior suddenly appeared.
+But the main reason behing this is that bug has several meanings.
+It can mean any of the following:
+
+* Unexpected behavior seen by end user
+* Typo in the source code
+* Wrong value
+
+We will follow zeller's [source] suggestions. Namely defects, infections and failures.
+In our previous example if the value of c printed is not correct, the enduser will see the failure.
+This is the bad/unexpected behavior at T=3. 
+If the value of c is incorrect at T=3 because a is wrong at T=2, then c is infected by a.
+If the value of a is wrong at T=0, this is the defect, because here it is set. 
+In other words, because someone mistyped the value of a, it is set to a wrong value.
+This in turn infects c and result in a failure at T=3. 
+
+The term bug could apply to the failure of wrong c printed on screen, the wrong calculation of c
+or the typo which lead to wrong value of a.
+
 # What should you know ?
 As a developer you should have a structured approach, a good mindset and knowledge about the problem.
-<describe high level solution>
 
-## A structures approach
-
+## A structured approach
+You should follow a high level process
+Leave an audit trail (keep notes)
+Quit thinking and look / Don't make assumptions / Trust nothing
 
 ## A good mindset
+As a software engineer you are a lucky person, since it is the one area in which almost every hypothesis is testable.
+So start with a positive aditude that you can measure, reproduce anything (there just ones and zeroes).
 
 
 # Solution Details 
@@ -54,22 +102,34 @@ This is the heart of the white paper.
 It provides very detailed descriptions of the proposed solution.
 You can also use tables, charts, and graphics for this section, with cross-references to external supporting documents if required.
 
-### 5 step debugging process
+# A Structured approach
+
+How should you debug structured then, well just follow the 5 step approach.
 
 * Reproduce
-* Collect clues
+* Simplify
 * Isolate the problem
 * Solve the problem
 * Test the solution
 
-#### Reproduce the problem
+A good rule of thumb presented by most authors is to fiddle around for 5-15 minutes with an unstructured approach.
+But after that switch to a more structured approach.
+
+## Reproduce the problem
 One of the biggest challenges is getting the complete state clear of the program you are trying to debug.
 If you can reproduce a problem consisttenly, you know when you fixed it as well.
+A piece of software theoretically has a finite set of inputs.
+Your job during this step is to describe all steps taken to reproduce the issue.
+The best way is to automate this, since this makes your steps executable.
+So write a (unit)test that reproduces the output. 
+If this is not possible, try to automate as much as possible, to make sure it is repeatly showing the same behavior.
 
-#### Collect clues
-Collecting clues gives you a first description of the problem. 
+## Simplify
+After you can reproduce the failure, try to remove every unnessecary step from the reproduction scenario.
+Try to reproduce the issue with and without each input. This will focus you search.
 
-#### Isolate the problem
+## Isolate the problem
+
 
 ##### Start with the first problem
 Usually bugs and problems don't come alone. They like to be together, but as always, there is usually one triggering all the problems.
