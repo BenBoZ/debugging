@@ -3,7 +3,7 @@ title: "Debugging"
 subtitle: "What you should know as developer"
 author: Ben Spoor
 date: March 2, 2016  
-lang: en-US
+lang: english
 reference-section-title: References
 bibliography: src/reference.bib
 keywords: debugging
@@ -168,7 +168,7 @@ The effort is not lost, a set of refuted hypothesis can lead to a correct one. [
 ### Strategies
 Strategies here, are techniques to isolate the problem to its smallest reproducible form.
 
-Strategies taken from Johson 1995 "Understanding troubleshooting styles to improbe training methods"
+Strategies taken from Johnson 1995 "Understanding troubleshooting styles to improbe training methods" [@johnson1995understanding]
 
 Troubleshooters use various strategies to identify faults dependent upon factors
 such as;
@@ -177,7 +177,7 @@ such as;
 * type of system
 * difficulty of the problem.
 
-Johnson(1991) identified five common search strategies:
+Johnson [@johnson1991training] identified five common search strategies:
 
 * trial and error
 * exhaustive
@@ -208,7 +208,7 @@ The process is repeated until a single component remains.
 
 ### Functional
 The functional method is the most difficult. Information about the system and its
-components forms the basis of hypothesis selection (Johnson, 1991).
+components forms the basis of hypothesis selection [@johnson1991training].
 Various types of functional search exist as well. Basing a hypothesis on known 
 system behavior and expected outcomes is the basic type of functional search.
 Problem solvers can also construct a "runnable" mental model of the system in which the fault conditions are simulated (deKleer & Brown, 1981)
